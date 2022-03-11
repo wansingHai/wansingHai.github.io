@@ -180,66 +180,10 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p><img src="/2022/03/11/%E9%98%BF%E9%87%8C%E4%BA%91-v2ray%E6%90%AD%E5%BB%BAvpn%E5%B9%B6%E5%90%AF%E7%94%A8BBR%E5%8A%A0%E9%80%9F/v2rayjietu.jpg"><br> <code>&lt;!-- more --&gt;</code></p>
-<h3 id="一、阿里云服务器搭建v2ray"><a href="#一、阿里云服务器搭建v2ray" class="headerlink" title="一、阿里云服务器搭建v2ray"></a>一、阿里云服务器搭建v2ray</h3><ol>
-<li>购买阿里云轻量级服务器设置系统为CentOS</li>
-<li>重置服务器密码<code>Hppd515963.</code>并重启服务器</li>
-<li>建立远程连接</li>
-<li>输入<code>sudo -i</code>获得root权限</li>
-<li>输入<code>bash &lt;(curl -s -L https://git.io/v2ray-setup.sh)</code> 下载v2ray软件,下载完成后直接获得v2ray地址和二维码</li>
-<li>安装完成后，默认端口为<code>65432</code>,用户名和密码默认都是<code>admin</code><ol>
-<li>保证此端口没有其他程序占用，并确认<code>65432</code>端口已放行</li>
-<li>点击服务器防火墙并添加规则</li>
-<li>设置全部TCP+UDP端口全部放行</li>
-</ol>
-</li>
-<li>复制公网IP：<code>*.*.*.* </code>,在浏览器输入并转到：<code>*.*.*.*:65432</code></li>
-<li>到面板设置里寻该账号密码，新用户名：<code>wangsin002</code>,新密码<code>LPd5151</code></li>
-<li>到账号列表中添加账号<ol>
-<li>点击<code>+</code>号</li>
-<li>备注：<code>任意名称</code></li>
-<li>协议：<code>vmess</code></li>
-<li>端口：<code>任意五位数</code></li>
-<li>点击<code>添加</code></li>
-</ol>
-</li>
-<li>点击二维码，手机扫码登录</li>
-</ol>
-<h3 id="二、设置BBR加速"><a href="#二、设置BBR加速" class="headerlink" title="二、设置BBR加速"></a>二、设置BBR加速</h3><ol>
-<li><p>查看内核版本：<code>uname -r</code></p>
-<p>显示为<code>3.10.0-514.2.2.el7.x86_64</code>低于4.9.0版本</p>
-</li>
-<li><p>下载CentOS自带包</p>
-<ol>
-<li><code>rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org</code></li>
-<li><code>rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm</code></li>
-</ol>
-</li>
-<li><p>下载内核：<code>yum --enablerepo=elrepo-kernel install kernel-ml -y</code></p>
-</li>
-<li><p>查看下载结果：<code>rpm -qa | grep kernel</code></p>
-</li>
-<li><p>查看启动项：<code>sudo egrep ^menuentry /etc/grub2.cfg | cut -f 2 -d \&#39;</code></p>
-</li>
-<li><p>选择启动项：<code>sudo grub2-set-default 0</code>（从0开始数）</p>
-</li>
-<li><p>重启系统：<code>sudo shutdown -r now</code></p>
-</li>
-<li><p>检查内核版本：<code>uname -r</code></p>
-</li>
-<li><p>下载BBR文件：</p>
-<ol>
-<li><code>echo &#39;net.core.default_qdisc=fq&#39; | sudo tee -a /etc/sysctl.conf</code></li>
-<li><code>echo &#39;net.ipv4.tcp_congestion_control=bbr&#39; | sudo tee -a /etc/sysctl.conf</code></li>
-<li><code>sudo sysctl -p</code></li>
-</ol>
-</li>
-<li><p>检查BBR是否运行：<code>lsmod | grep bbr</code></p>
-</li>
-<li><p>可查看官网原文：[<a href="http://www.vultr.com]">www.vultr.com]</a>(<a target="_blank" rel="noopener" href="https://www.vultr.com/docs/how-to-deploy-google-bbr-on-centos-7">How to Deploy Google BBR on CentOS 7 - Vultr.com</a>)</p>
-</li>
-</ol>
-
+    <p><img src="/2022/03/11/%E9%98%BF%E9%87%8C%E4%BA%91-v2ray%E6%90%AD%E5%BB%BAvpn%E5%B9%B6%E5%90%AF%E7%94%A8BBR%E5%8A%A0%E9%80%9F/v2rayjietu.jpg"><br></p>
+    
+    <a class="article-more-a" href="/2022/03/11/%E9%98%BF%E9%87%8C%E4%BA%91-v2ray%E6%90%AD%E5%BB%BAvpn%E5%B9%B6%E5%90%AF%E7%94%A8BBR%E5%8A%A0%E9%80%9F/#more">more >></a>
+    
     
 
     
@@ -266,80 +210,6 @@
     
     <p class="article-more-link">
       <a class="article-more-a" href="/2022/03/11/%E9%98%BF%E9%87%8C%E4%BA%91-v2ray%E6%90%AD%E5%BB%BAvpn%E5%B9%B6%E5%90%AF%E7%94%A8BBR%E5%8A%A0%E9%80%9F/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-aaa" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2022/03/10/aaa/" target="_blank">aaa</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2022/03/10/aaa/" class="archive-article-date">
-        <time datetime="2022-03-10T13:41:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-10</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/03/10/aaa/">展开全文 >></a>
     </p>
     
 
