@@ -10,18 +10,19 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="一、购买Windows2008R2系统服务器二、建立远程连接 点击远程连接按钮，设置远程连接密码和服务器管理密码 重启服务器 启动远程连接 打开服务器管理-配置-高级安全Windows防火墙-入站规则-远程服务器管理 打开控制面板-系统-高级系统设置-允许运行任意版本 打开网络和共享中心-windows防火墙-允许程序通过Windows防火墙-勾选远程访问隔离、远程服务管理、远程桌面 回到桌面，w">
-<meta property="og:type" content="article">
+  <meta property="og:type" content="article">
 <meta property="og:title" content="阿里云轻量级服务器应用实例-Windows2008R2系统服务器">
 <meta property="og:url" content="https://wansinghai.github.io/2022/03/12/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B-Windows2008R2%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/index.html">
 <meta property="og:site_name" content="wansingHai的博客">
-<meta property="og:description" content="一、购买Windows2008R2系统服务器二、建立远程连接 点击远程连接按钮，设置远程连接密码和服务器管理密码 重启服务器 启动远程连接 打开服务器管理-配置-高级安全Windows防火墙-入站规则-远程服务器管理 打开控制面板-系统-高级系统设置-允许运行任意版本 打开网络和共享中心-windows防火墙-允许程序通过Windows防火墙-勾选远程访问隔离、远程服务管理、远程桌面 回到桌面，w">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://wansinghai.github.io/2022/03/12/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B-Windows2008R2%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/server_2008r2.png">
+<meta property="og:image" content="https://wansinghai.github.io/2022/03/12/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B-Windows2008R2%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/Windows_Server_2008.png">
 <meta property="article:published_time" content="2022-03-12T03:00:00.000Z">
-<meta property="article:modified_time" content="2022-03-12T03:09:19.870Z">
+<meta property="article:modified_time" content="2022-03-12T03:17:19.618Z">
 <meta property="article:author" content="wansingHai">
 <meta property="article:tag" content="技术">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wansinghai.github.io/2022/03/12/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B-Windows2008R2%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/server_2008r2.png">
   
     <link rel="alternative" href="/atom.xml" title="wansingHai的博客" type="application/atom+xml">
   
@@ -194,7 +195,9 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="一、购买Windows2008R2系统服务器"><a href="#一、购买Windows2008R2系统服务器" class="headerlink" title="一、购买Windows2008R2系统服务器"></a>一、购买Windows2008R2系统服务器</h3><h3 id="二、建立远程连接"><a href="#二、建立远程连接" class="headerlink" title="二、建立远程连接"></a>二、建立远程连接</h3><ol>
+    <p><img src="/2022/03/12/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B-Windows2008R2%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/server_2008r2.png"></p>
+<span id="more"></span>
+<h3 id="一、购买Windows2008R2系统服务器"><a href="#一、购买Windows2008R2系统服务器" class="headerlink" title="一、购买Windows2008R2系统服务器"></a>一、购买Windows2008R2系统服务器</h3><h3 id="二、建立远程连接"><a href="#二、建立远程连接" class="headerlink" title="二、建立远程连接"></a>二、建立远程连接</h3><ol>
 <li>点击远程连接按钮，设置远程连接密码和服务器管理密码</li>
 <li>重启服务器</li>
 <li>启动远程连接</li>
@@ -217,6 +220,7 @@
 <li>将文件与服务器端软件替换</li>
 <li>运行wv2ray.exe</li>
 </ol>
+<p><img src="/2022/03/12/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B-Windows2008R2%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/Windows_Server_2008.png"></p>
 
     
 
