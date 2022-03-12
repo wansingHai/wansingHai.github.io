@@ -6,24 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://wansingHai.github.io">
-  <title>阿里云轻量级服务器应用实例-Windows2008R2系统服务器 | wansingHai的博客</title>
+  <title>服务器远程连接桌面后键盘与鼠标仍处于可交互状态 | wansingHai的博客</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta property="og:type" content="article">
-<meta property="og:title" content="阿里云轻量级服务器应用实例-Windows2008R2系统服务器">
-<meta property="og:url" content="https://wansinghai.github.io/2022/03/12/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B-Windows2008R2%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/index.html">
+<meta property="og:title" content="服务器远程连接桌面后键盘与鼠标仍处于可交互状态">
+<meta property="og:url" content="https://wansinghai.github.io/2022/03/12/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%A1%8C%E9%9D%A2%E5%90%8E%E9%94%AE%E7%9B%98%E4%B8%8E%E9%BC%A0%E6%A0%87%E4%BB%8D%E5%A4%84%E4%BA%8E%E5%8F%AF%E4%BA%A4%E4%BA%92%E7%8A%B6%E6%80%81/index.html">
 <meta property="og:site_name" content="wansingHai的博客">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://wansinghai.github.io/2022/03/12/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B-Windows2008R2%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/server_2008r2.png">
-<meta property="og:image" content="https://wansinghai.github.io/2022/03/12/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B-Windows2008R2%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/Windows_Server_2008.png">
-<meta property="article:published_time" content="2022-03-12T03:00:00.000Z">
-<meta property="article:modified_time" content="2022-03-12T03:25:25.957Z">
+<meta property="og:image" content="https://wansinghai.github.io/2022/03/12/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%A1%8C%E9%9D%A2%E5%90%8E%E9%94%AE%E7%9B%98%E4%B8%8E%E9%BC%A0%E6%A0%87%E4%BB%8D%E5%A4%84%E4%BA%8E%E5%8F%AF%E4%BA%A4%E4%BA%92%E7%8A%B6%E6%80%81/img.png">
+<meta property="article:published_time" content="2022-03-12T03:27:21.000Z">
+<meta property="article:modified_time" content="2022-03-12T03:35:15.004Z">
 <meta property="article:author" content="wansingHai">
 <meta property="article:tag" content="技术">
 <meta property="article:tag" content="服务器">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://wansinghai.github.io/2022/03/12/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B-Windows2008R2%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/server_2008r2.png">
+<meta name="twitter:image" content="https://wansinghai.github.io/2022/03/12/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%A1%8C%E9%9D%A2%E5%90%8E%E9%94%AE%E7%9B%98%E4%B8%8E%E9%BC%A0%E6%A0%87%E4%BB%8D%E5%A4%84%E4%BA%8E%E5%8F%AF%E4%BA%A4%E4%BA%92%E7%8A%B6%E6%80%81/img.png">
   
     <link rel="alternative" href="/atom.xml" title="wansingHai的博客" type="application/atom+xml">
   
@@ -148,22 +147,22 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-阿里云轻量级服务器应用实例-Windows2008R2系统服务器" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-服务器远程连接桌面后键盘与鼠标仍处于可交互状态" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      阿里云轻量级服务器应用实例-Windows2008R2系统服务器
+      服务器远程连接桌面后键盘与鼠标仍处于可交互状态
     </h1>
   
 
 
   
   
-<a href="/2022/03/12/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B-Windows2008R2%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="archive-article-date">
-        <time datetime="2022-03-12T03:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-12</time>
+<a href="/2022/03/12/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%A1%8C%E9%9D%A2%E5%90%8E%E9%94%AE%E7%9B%98%E4%B8%8E%E9%BC%A0%E6%A0%87%E4%BB%8D%E5%A4%84%E4%BA%8E%E5%8F%AF%E4%BA%A4%E4%BA%92%E7%8A%B6%E6%80%81/" class="archive-article-date">
+        <time datetime="2022-03-12T03:27:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-12</time>
 </a>
 
   
@@ -176,7 +175,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">247字</span>
+      <span class="post-count">1.1k字</span>
     </span>
   </span>
 
@@ -185,7 +184,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">4分</span>
     </span>
   </span>
 </div>
@@ -196,32 +195,42 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p><img src="/2022/03/12/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B-Windows2008R2%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/server_2008r2.png"></p>
+    <p><img src="/2022/03/12/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%A1%8C%E9%9D%A2%E5%90%8E%E9%94%AE%E7%9B%98%E4%B8%8E%E9%BC%A0%E6%A0%87%E4%BB%8D%E5%A4%84%E4%BA%8E%E5%8F%AF%E4%BA%A4%E4%BA%92%E7%8A%B6%E6%80%81/img.png"></p>
 <span id="more"></span>
-<h3 id="一、购买Windows2008R2系统服务器"><a href="#一、购买Windows2008R2系统服务器" class="headerlink" title="一、购买Windows2008R2系统服务器"></a>一、购买Windows2008R2系统服务器</h3><h3 id="二、建立远程连接"><a href="#二、建立远程连接" class="headerlink" title="二、建立远程连接"></a>二、建立远程连接</h3><ol>
-<li>点击远程连接按钮，设置远程连接密码和服务器管理密码</li>
-<li>重启服务器</li>
-<li>启动远程连接</li>
-<li>打开服务器管理-配置-高级安全Windows防火墙-入站规则-远程服务器管理</li>
-<li>打开控制面板-系统-高级系统设置-允许运行任意版本</li>
-<li>打开网络和共享中心-windows防火墙-允许程序通过Windows防火墙-勾选远程访问隔离、远程服务管理、远程桌面</li>
-<li>回到桌面，win+r，输入<code>mstsc</code>，回车，进入远程桌面</li>
+<p>例如在使用按键精灵设置QQ自动回复消息时，关闭远程桌面后键盘和鼠标会停止运转，这是可以采取以下方法来进行设置。</p>
+<ol>
+<li><p>Windows操作系统中有三个概念：Session、Windows Station、Desktop</p>
+<ol>
+<li><p>Session</p>
+<p>用户会话，每个登录操作系统的用户都会分配一个唯一的登录会话，用于标识该用户。操作系统（2008 及以上）保留0号会话给一些系统服务及用户态的驱动使用，第1个登录系统的用户使用的 Session ID 为1，该用户执行的所有应用程序都在 Session 1 下执行。</p>
+</li>
+<li><p>Windows Station</p>
+<p>Station 可以理解为工作站，它被认为是桌面和进程的安全边界。因此，每一个 session 都会包含多个 station，而每一个 Station 又包含1个或多个 Desktop。<br>但是，多个 Station 中，只有名字叫 Winsta0 的 Station 才是交互式的 station，也就是说只有它才能有 UI 并接受用户输入。所以每个 Session 都有一个叫 Winsta0 的用户进行交互。</p>
+</li>
+<li><p>Desktop</p>
+</li>
 </ol>
-<h3 id="三、下载软件"><a href="#三、下载软件" class="headerlink" title="三、下载软件"></a>三、下载软件</h3><ol>
-<li>打开IE，Internet选项</li>
-<li>安全-Internet-自定义级别-允许下载</li>
+<p>这里的 Desktop 并不是我们进入系统后所看到的那个蓝底的桌面（，我们看到的这个桌面，实际上只是一个窗口）。而是逻辑上的一个显示对象，它包含可显示的 GUI 对象（比如窗口、菜单、钩子等）。一般情况下，WinSta0 包含至少三个Desktop：登录（WinLogon）、屏保（ScreenSaver）和默认（Default，能看到所有应用程序的地方）。<br>同一时刻只能有一个Desktop处于激活状态（而能激活的 Desktop 只能属于 Winsta0）。用户还没登录的时候，登录桌面处于激活状态。登录之后，默认的Desktop处于激活状态。当达到系统电源设置的某个点的时候，系统切换到屏保，此时屏保Desktop处于激活状态。当用户按下 Ctrl + Alt + Delete 时，切换到登录Desktop，此时登录Desktop处于激活状态。<br>激活状态的Desktop才能接收用户输入，钩子才能获取其中的某个窗口消息。</p>
+</li>
+<li><p>远程桌面退出后不可交互原因</p>
+<ol>
+<li>最小化会让远程桌面的会话切换到无图形界面的模式，这自然就无法继续接收鼠标、键盘的指令了。</li>
+<li>关闭远程桌面会让系统切换到登录Desktop的界面，而在该Desktop上并没有我们打开的其它窗口，因此会导致 UI 自动化测试失败。</li>
 </ol>
-<h3 id="四、搭建V2ray"><a href="#四、搭建V2ray" class="headerlink" title="四、搭建V2ray"></a>四、搭建V2ray</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://www.zhuguodong.com/?id=383">下载服务器端和客户端V2ray客户端</a> 并设置</li>
-<li>端口开放32333</li>
-<li>地址<code>*.*.*.*</code></li>
-<li>用户ID：<code>*-*-*-*-*</code></li>
-<li>自定义Id、额外Id:<code>*</code></li>
-<li>导出服务器为服务端配置</li>
-<li>将文件与服务器端软件替换</li>
-<li>运行wv2ray.exe</li>
+</li>
+<li><p>解决办法</p>
+<ol>
+<li><p>在远程桌面（被连接到的电脑）中先执行 query session 来查看当前登录到的 session，（远程桌面的 sessionName 都以 rdp-tcp 开头）。然后用管理员用户打开命令行工具，并执行 “tscon rdp-tcp#0 &#x2F;dest:console”，其中 rdp-tcp#0 为该该命令会关闭远程桌面的连接，然后把连接返回给远程的那台电脑（绕开登录过程）。这里的 console 只是一个 session 的名字，而这个名字的意思并非是  “控制台” 的意思，而是指带有输入输出设备的机器，一般直接登录电脑的会话就是 console。<br>假设电脑A执行 mstsc 连接到电脑B（连接成功后，电脑B黑屏），此时在电脑B上执行上述命令后（替换对应的session名字），电脑A中的远程连接窗口会被关闭，并提示远程连接会话已经终止。电脑B（假设运行在另一台物理机上）会恢复到已经登录的状态，如果需要重新让电脑B恢复锁屏状态，可以在电脑B上执行如下命令：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rundll32.exe user32.dll,LockWorkStation</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>先通过方案一查询console是哪个会话ID,远程桌面mstsc远程登录虚拟机时,在虚拟机中新建文本文档，写入内容:</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@<span class="variable">%windir%</span>\System32\tscon.exe <span class="number">1</span> /dest:console</span><br><span class="line">@<span class="variable">%windir%</span>\System32\tscon.exe <span class="number">2</span> /dest:console</span><br><span class="line">@<span class="variable">%windir%</span>\System32\tscon.exe <span class="number">3</span> /dest:console</span><br></pre></td></tr></table></figure>
+
+<p>将文本文档重新命名为‘Close_RDP’，并将后缀名改为‘.bat’，双击文件‘Close_RDP.bat’关闭远程链接。不过此方法存在不太稳定的情况，不推荐使用。经测试主要问题是出现在tscon.exe有的系统可以成功运行，有的会运行失败。得多找几个不同系统的tscon.exe测试保证成功。</p>
+</li>
 </ol>
-<p><img src="/2022/03/12/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B-Windows2008R2%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/Windows_Server_2008.png"></p>
+</li>
+</ol>
 
     
 
@@ -236,7 +245,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://wansingHai.github.io/2022/03/12/阿里云轻量级服务器应用实例-Windows2008R2系统服务器/" title="阿里云轻量级服务器应用实例-Windows2008R2系统服务器" target="_blank">https://wansingHai.github.io/2022/03/12/阿里云轻量级服务器应用实例-Windows2008R2系统服务器/</a>
+          <a href="https://wansingHai.github.io/2022/03/12/服务器远程连接桌面后键盘与鼠标仍处于可交互状态/" title="服务器远程连接桌面后键盘与鼠标仍处于可交互状态" target="_blank">https://wansingHai.github.io/2022/03/12/服务器远程连接桌面后键盘与鼠标仍处于可交互状态/</a>
         </li>
         
         <li>
@@ -281,18 +290,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2022/03/12/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%A1%8C%E9%9D%A2%E5%90%8E%E9%94%AE%E7%9B%98%E4%B8%8E%E9%BC%A0%E6%A0%87%E4%BB%8D%E5%A4%84%E4%BA%8E%E5%8F%AF%E4%BA%A4%E4%BA%92%E7%8A%B6%E6%80%81/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          服务器远程连接桌面后键盘与鼠标仍处于可交互状态
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/03/11/%E9%98%BF%E9%87%8C%E4%BA%91-v2ray%E6%90%AD%E5%BB%BAvpn%E5%B9%B6%E5%90%AF%E7%94%A8BBR%E5%8A%A0%E9%80%9F/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">阿里云-v2ray搭建vpn并启用BBR加速</div>
+    <a href="/2022/03/12/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B-Windows2008R2%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">阿里云轻量级服务器应用实例-Windows2008R2系统服务器</div>
       <i class="icon-circle-right"></i>
     </a>
   
